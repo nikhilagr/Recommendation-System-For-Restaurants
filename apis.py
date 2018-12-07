@@ -40,6 +40,7 @@ def getQuarter(quarter,year):
     quarterDF = temp[temp['month'].isin(month)] 
     return quarterDF
 
+# Create business rating list
 def createBusinessRatingsListDict(dataFra):
     business_reviews = defaultdict()
     lis = []
@@ -54,12 +55,14 @@ def createBusinessRatingsListDict(dataFra):
         lis = []
     return  business_reviews
 
+# To find mean of ratings
 def createBusinessRatingMeanList(business_reviews):
     final_business_ratings = {}
     for val in business_reviews:
         final_business_ratings[val] = np.mean(business_reviews[val]) 
     return final_business_ratings
 
+# Given business id get lat lang from dataframe
 def getLatLong(ipbusiness_id):
     for i,row in restaurantData.iterrows():
         if row['business_id'] == ipbusiness_id:
