@@ -63,7 +63,7 @@ Data Pre-processing is very important step because the raw reviews are pretty me
    
 #### Item Based Collaborative Filtering
    * Used Surprise library to build recommendation system.
-   * ** Models Tried:**
+   * **Models Tried:**
         * KNNWithMeans
         * KNNWithZScore
         * KNNBasic
