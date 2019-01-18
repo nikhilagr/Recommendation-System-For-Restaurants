@@ -35,6 +35,7 @@ Data Pre-processing is very important step because the raw reviews are pretty me
    * Sentiment analysis helps predicting whether a review is positive/negative.
    * Review ratings were predicted with the positive score and negative score features only.
 <img src = "Images/Sentiment1.png" > 
+
    * **This model gave us an RMSE of 0.9890**
    * **Problem with this approach**
      Sentiment Analyzer fails to capture correct sentiment of sarcastic text!
