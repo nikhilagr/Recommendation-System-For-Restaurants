@@ -38,14 +38,14 @@ Data Pre-processing is very important step because the raw reviews are pretty me
    * **This model gave us an RMSE of 0.9890**
    * **Problem with this approach**
      Sentiment Analyzer fails to capture correct sentiment of sarcastic text!
-<img src = "Sentiment-Problem.png" > 
+<img src = "Images/Sentiment-Problem.png" > 
 
 
 ##### Latent Dirichlet Allocation.
    * LDA is an unsupervised topic modelling algorithm that discovers the hidden topics.
    * Since reviews justify the ratings given by the user we extract the hidden topics from the reviews and use these as features to predict the ratings.
    * With 10 extracted topics this model gave us an RMSE of 0.9402
-<img src = "LDA.png">
+<img src = "Images/LDA.png">
      
 ##### Latent Dirichlet Allocation + Sentiment Analysis.
    * Sometimes in prediction the topic sentiment is more important that the topic distribution.
@@ -54,11 +54,11 @@ Data Pre-processing is very important step because the raw reviews are pretty me
    * This model captures such corner cases and gave RMSE as 0.9094  
 
 #### Architechture
-<img src = "Architechture.png" >
+<img src = "Images/Architechture.png" >
    
    
 #### Results for rating prediction
-<img src = "Result.png">
+<img src = "Images/Result.png">
    
    
 #### Item Based Collaborative Filtering
