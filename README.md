@@ -42,13 +42,13 @@ Data Pre-processing is very important step because the raw reviews are pretty me
 <img src = "Images/Sentiment-Problem.png" > 
 
 
-##### Latent Dirichlet Allocation.
+#### Latent Dirichlet Allocation.
    * LDA is an unsupervised topic modelling algorithm that discovers the hidden topics.
    * Since reviews justify the ratings given by the user we extract the hidden topics from the reviews and use these as features to predict the ratings.
    * With 10 extracted topics this model gave us an RMSE of 0.9402
 <img src = "Images/LDA.png">
      
-##### Latent Dirichlet Allocation + Sentiment Analysis.
+#### Latent Dirichlet Allocation + Sentiment Analysis.
    * Sometimes in prediction the topic sentiment is more important that the topic distribution.
    * For example, a user may write a lot of positive words describing about the ambience of a restaurant which a sentiment analyser will wrongly predict as a 5 star review. 
    * But in reality, the user ended up with just one sentence describing about the average food which made it a 3 star rating.
